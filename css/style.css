@@ -566,13 +566,11 @@ body {
         display: flex;
 }
 
-.footer-social {
-        padding-top: 12px;
-}
+
 
 .footer-item {
         display: flex;
-        margin-left: 70px;
+       
         justify-content: center;
 }
 
@@ -620,7 +618,7 @@ body {
         text-transform: uppercase;
         color: var(--second-color);
         margin-bottom: 20px;
-        margin-left: 70px;
+       
 }
 
 .main-button {
@@ -770,6 +768,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         height: 581px;
         top: 50%;
         left: 50%;
+        padding: 40px;
         transform: translate(-50%, -50%);
         transition: transform 1000ms;
         background-color: var(--second-color);
@@ -808,11 +807,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         pointer-events: none;
 }
 
-.modal-form {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-}
+
 
 .modal-text {
 
@@ -822,15 +817,16 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         line-height: 23px;
         text-align: center;
         letter-spacing: 0.03em;
-        
+        margin-bottom: 12px;
         color: var(--main-color);
 }
 
 .modal-label {
+        display: flex;
         font-size: 12px;
         color: #757575;
         font-weight: 400;
-        padding-bottom: 4px;
+        margin-bottom: 4px;
 }
 
 
@@ -885,6 +881,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         resize: none;
         padding: 12px 16px;
         outline-style: none;
+        margin-bottom: 20px;
 }
 
 .modal-textarea::placeholder {
@@ -929,7 +926,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-icon {
         display: inline-block;
-        align-items: center;
+        align-items:center;
         width: 16px;
         height: 15px;
         border: 2px solid var(--main-color) ;
@@ -941,6 +938,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-input:checked + .checkbox-icon {
+       
         border-color: transparent;
         background-color: #2196F3;
         background-image: url('../img/terms-icon.svg');
@@ -976,7 +974,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-
+.footer > .container {
+       display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+}
 
 
 
@@ -1006,10 +1008,10 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background-color: var(--button-color);
  }
 
-.footer-form {
-        margin-left: 93px;
-        margin-top: 12px;
-}
+/*.footer-form {
+       justify-content: left;
+        padding-top: 12px;
+}*/
 
 .buttons .footer-form-input {
         display: block;
